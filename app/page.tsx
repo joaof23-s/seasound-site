@@ -224,20 +224,23 @@ const darkSection = {
 };
 
 const marqueeSection = {
-  background:"#0b2a6f",
-  overflow:"hidden",
-  padding:"28px 0"
+  background: "#0b2a6f",
+  overflow: "hidden",
+  padding: "28px 0",
+  width: "100vw", // ⭐ ocupa largura total
+  marginLeft: "calc(50% - 50vw)", // ⭐ remove padding do container
 };
 
 const marqueeTrack: React.CSSProperties = {
   display: "flex",
-  width: "200%", // ⭐ ESSENCIAL
+  width: "max-content", // ⭐ CORREÇÃO REAL
   animation: "marquee 20s linear infinite",
+  willChange: "transform",
 };
 
 const marqueeContent: React.CSSProperties = {
-  width: "50%", // ⭐ ESSENCIAL
   whiteSpace: "nowrap",
+  flexShrink: 0, // ⭐ MUITO IMPORTANTE
   fontSize: 16,
   letterSpacing: 6,
   fontWeight: 600,
