@@ -124,6 +124,10 @@ export default function Home() {
           </div>
         </div>
 
+
+
+
+
         <div style={finalCta}>
           <h2>Your trusted marine supply partner</h2>
 
@@ -226,17 +230,20 @@ const marqueeSection = {
 };
 
 const marqueeTrack: React.CSSProperties = {
-  display:"flex",
-  animation:"marquee 20s linear infinite"
+  display: "flex",
+  width: "200%", // ⭐ ESSENCIAL
+  animation: "marquee 20s linear infinite",
 };
 
 const marqueeContent: React.CSSProperties = {
-  whiteSpace:"nowrap",
-  fontSize:14,
-  letterSpacing:3,
-  fontWeight:600,
-  color:"#ffffff"
+  width: "50%", // ⭐ ESSENCIAL
+  whiteSpace: "nowrap",
+  fontSize: 16,
+  letterSpacing: 6,
+  fontWeight: 600,
+  color: "#ffffff"
 };
+
 
 const finalCta = {
   padding:"140px 24px 180px",
