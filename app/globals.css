@@ -1,0 +1,235 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  color: #020617;
+  overflow-x: hidden;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: linear-gradient(180deg, #020617, #020617cc);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  transition: all .3s ease;
+}
+
+.header-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+/* ===== NAV ===== */
+.main-nav {
+  display: flex;
+  gap: 44px;
+}
+
+/* ===== NAV LINK ULTRA ===== */
+.nav-link {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  color: #cbd5f5;
+  text-decoration: none;
+  padding: 6px 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+  border-radius: 2px;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* ===== PAGE OFFSET ===== */
+.page-content {
+  padding-top: 96px;
+}
+
+/* ===== BUTTON SYSTEM ULTRA ===== */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 48px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  transition: all 0.35s ease;
+  box-shadow: 0 15px 40px rgba(37, 99, 235, 0.35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.45);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 38px;
+  border-radius: 999px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+/* ===== FADE UP ANIMATION CINEMATIC ===== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== IMAGE CINEMATIC HOVER ===== */
+img {
+  transition: transform .6s ease, filter .6s ease;
+}
+
+img:hover {
+  transform: scale(1.04);
+}
+
+/* ===== MARQUEE ANIMATION ===== */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ================= MOBILE SYSTEM ================= */
+
+@media (max-width: 1024px) {
+
+  h1 {
+    font-size: clamp(28px, 5vw, 42px) !important;
+  }
+
+  h2 {
+    font-size: clamp(22px, 4vw, 32px) !important;
+  }
+
+  section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .mobile-column {
+    flex-direction: column !important;
+  }
+
+  .mobile-grid-1 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .mobile-center {
+    text-align: center !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* Esconde top bar no mobile */
+  .top-bar {
+    display: none !important;
+  }
+
+}
+
+/* MOBILE HEADER FIX */
+
+@media (max-width: 768px) {
+
+  .brand-text {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .top-bar-content {
+    justify-content: center !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .service-row {
+    flex-direction: column !important;
+    text-align: left;
+  }
+
+  .service-row img {
+    margin-bottom: 16px;
+  }
+
+}
+
