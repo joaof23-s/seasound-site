@@ -4,7 +4,7 @@ import CopyEmail from "./components/CopyEmail";
 export const metadata = {
   title: "Seasound Ship Supply | Marine Supply for Cargo Vessels",
   description:
-    "Seasound Ship Supply provides marine supply and provisions for cargo vessels at Rio de Janeiro and Itaguaí ports.",
+    "Seasound Ship Supply provides marine supply and provisions for cargo vessels at Rio de Janeiro ports.",
   icons: {
     icon: "/favicon.ico",
   },
