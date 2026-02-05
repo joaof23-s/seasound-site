@@ -113,13 +113,13 @@ export default function Home() {
         <div style={marqueeSection}>
           <div style={marqueeTrack}>
             <div style={marqueeContent}>
-              MARINE SUPPLY • BONDED STORES • PROVISIONS • SAFETY EQUIPMENT • 
-              PORT OPERATIONS • MARINE LOGISTICS •
+              GENERAL SHIP SUPPLY • PROVISIONS • BONDED STORES • 
+              SAFETY EQUIPMENT • PORT OPERATIONS • MARINE LOGISTICS •
             </div>
 
             <div style={marqueeContent}>
-              MARINE SUPPLY • BONDED STORES • PROVISIONS • SAFETY EQUIPMENT • 
-              PORT OPERATIONS • MARINE LOGISTICS •
+              GENERAL SHIP SUPPLY • PROVISIONS • BONDED STORES • 
+              SAFETY EQUIPMENT • PORT OPERATIONS • MARINE LOGISTICS •
             </div>
           </div>
         </div>
@@ -215,7 +215,8 @@ const text: React.CSSProperties = {
 };
 
 const darkSection = {
-  background:"#020617"
+  background:"#020617",
+  marginTop:0
 };
 
 const marqueeSection = {
@@ -226,8 +227,7 @@ const marqueeSection = {
 
 const marqueeTrack: React.CSSProperties = {
   display:"flex",
-  width:"max-content",
-  animation:"marquee 25s linear infinite"
+  animation:"marquee 20s linear infinite"
 };
 
 const marqueeContent: React.CSSProperties = {
@@ -235,8 +235,7 @@ const marqueeContent: React.CSSProperties = {
   fontSize:14,
   letterSpacing:3,
   fontWeight:600,
-  color:"#ffffff",
-  paddingRight:80
+  color:"#ffffff"
 };
 
 const finalCta = {
