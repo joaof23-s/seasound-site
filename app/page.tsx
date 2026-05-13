@@ -47,7 +47,7 @@ export default function Home() {
         <div style={overlay}></div>
 
         <div style={heroContent}>
-          <img src="/seasound.png" alt="Seasound Ship Supply" style={heroLogo} />
+          <img src="/seasound.png" alt="Sea Sound Ship Supply" style={heroLogo} />
 
           <h1 style={heroTitle}>
             Premium Marine Supply Solutions
