@@ -231,6 +231,7 @@ const marqueeSection = {
 
 const marqueeTrack: React.CSSProperties = {
   display: "flex",
+  gap: 0,
   animation: "marquee 20s linear infinite",
   willChange: "transform",
 };
@@ -238,13 +239,12 @@ const marqueeTrack: React.CSSProperties = {
 const marqueeContent: React.CSSProperties = {
   whiteSpace: "nowrap",
   flexShrink: 0,
-  minWidth: "100vw",
   fontSize: 16,
   letterSpacing: 6,
   fontWeight: 600,
   color: "#ffffff",
-  display: "flex",
-  alignItems: "center",
+  paddingRight: 0,
+  marginRight: 0,
 };
 
 
