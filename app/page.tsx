@@ -113,13 +113,11 @@ export default function Home() {
         <div style={marqueeSection}>
           <div style={marqueeTrack}>
             <div style={marqueeContent}>
-              GENERAL SHIP SUPPLY • PROVISIONS • BONDED STORES • 
-              SAFETY EQUIPMENT • PORT OPERATIONS • MARINE LOGISTICS •
+                 &nbsp;•&nbsp; GENERAL SHIP SUPPLY &nbsp;•&nbsp; PROVISIONS &nbsp;•&nbsp; BONDED STORES &nbsp;•&nbsp; SAFETY EQUIPMENT &nbsp;•&nbsp; PORT OPERATIONS &nbsp;•&nbsp; MARINE LOGISTICS
             </div>
 
             <div style={marqueeContent}>
-              GENERAL SHIP SUPPLY • PROVISIONS • BONDED STORES • 
-              SAFETY EQUIPMENT • PORT OPERATIONS • MARINE LOGISTICS •
+                  &nbsp;•&nbsp; GENERAL SHIP SUPPLY &nbsp;•&nbsp; PROVISIONS &nbsp;•&nbsp; BONDED STORES &nbsp;•&nbsp; SAFETY EQUIPMENT &nbsp;•&nbsp; PORT OPERATIONS &nbsp;•&nbsp; MARINE LOGISTICS
             </div>
           </div>
         </div>
