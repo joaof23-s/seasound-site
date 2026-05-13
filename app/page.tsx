@@ -111,13 +111,17 @@ export default function Home() {
       {/* ===== DARK CONTINUOUS SECTION ===== */}
       <section style={darkSection}>
         <div style={marqueeSection}>
-         <div className="marquee-track">
-           {Array.from({ length: 8 }).map((_, i) => (
-             <span key={i} style={marqueeContent}>
-              GENERAL SHIP SUPPLY &nbsp;•&nbsp; PROVISIONS &nbsp;•&nbsp; BONDED STORES &nbsp;•&nbsp; SAFETY EQUIPMENT &nbsp;•&nbsp; PORT OPERATIONS &nbsp;•&nbsp; MARINE LOGISTICS &nbsp;•&nbsp;
-             </span>
-            ))}
-         </div>
+          <div style={marqueeTrack}>
+            <div style={marqueeContent}>
+              GENERAL SHIP SUPPLY • PROVISIONS • BONDED STORES • 
+              SAFETY EQUIPMENT • PORT OPERATIONS • MARINE LOGISTICS •
+            </div>
+
+            <div style={marqueeContent}>
+              GENERAL SHIP SUPPLY • PROVISIONS • BONDED STORES • 
+              SAFETY EQUIPMENT • PORT OPERATIONS • MARINE LOGISTICS •
+            </div>
+          </div>
         </div>
 
 
@@ -223,16 +227,24 @@ const marqueeSection = {
   background: "#0b2a6f",
   overflow: "hidden",
   padding: "28px 0",
+  width: "100vw", // ⭐ ocupa largura total
+  marginLeft: "calc(50% - 50vw)", // ⭐ remove padding do container
 };
 
+const marqueeTrack: React.CSSProperties = {
+  display: "flex",
+  width: "max-content", // ⭐ CORREÇÃO REAL
+  animation: "marquee 20s linear infinite",
+  willChange: "transform",
+};
 
 const marqueeContent: React.CSSProperties = {
   whiteSpace: "nowrap",
-  flexShrink: 0,
+  flexShrink: 0, // ⭐ MUITO IMPORTANTE
   fontSize: 16,
   letterSpacing: 6,
   fontWeight: 600,
-  color: "#ffffff",
+  color: "#ffffff"
 };
 
 
