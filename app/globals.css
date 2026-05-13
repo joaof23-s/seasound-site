@@ -151,6 +151,17 @@ img:hover {
 
 
 
+/* ===== MARQUEE PROFISSIONAL INFINITO REAL ===== */
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 /* ================= MOBILE SYSTEM ================= */
 
 @media (max-width: 1024px) {
@@ -223,16 +234,6 @@ img:hover {
   .service-row img {
     margin-bottom: 16px;
   }
-
-  .marquee-track {
-  display: flex;
-  animation: marquee 30s linear infinite;
-  width: max-content;
-}
-
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
 
 }
 
