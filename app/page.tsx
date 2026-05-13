@@ -225,12 +225,6 @@ const marqueeSection = {
   padding: "28px 0",
 };
 
-const marqueeTrack: React.CSSProperties = {
-  display: "flex",
-  gap: 0,
-  animation: "marquee 20s linear infinite",
-  willChange: "transform",
-};
 
 const marqueeContent: React.CSSProperties = {
   whiteSpace: "nowrap",
