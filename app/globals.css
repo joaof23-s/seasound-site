@@ -151,17 +151,6 @@ img:hover {
 
 
 
-/* ===== MARQUEE PROFISSIONAL INFINITO REAL ===== */
-
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
 /* ================= MOBILE SYSTEM ================= */
 
 @media (max-width: 1024px) {
