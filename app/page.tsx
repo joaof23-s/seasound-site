@@ -111,15 +111,13 @@ export default function Home() {
       {/* ===== DARK CONTINUOUS SECTION ===== */}
       <section style={darkSection}>
         <div style={marqueeSection}>
-          <div style={marqueeTrack}>
-            <div style={marqueeContent}>
-                 &nbsp;•&nbsp; GENERAL SHIP SUPPLY &nbsp;•&nbsp; PROVISIONS &nbsp;•&nbsp; BONDED STORES &nbsp;•&nbsp; SAFETY EQUIPMENT &nbsp;•&nbsp; PORT OPERATIONS &nbsp;•&nbsp; MARINE LOGISTICS
-            </div>
-
-            <div style={marqueeContent}>
-                  &nbsp;•&nbsp; GENERAL SHIP SUPPLY &nbsp;•&nbsp; PROVISIONS &nbsp;•&nbsp; BONDED STORES &nbsp;•&nbsp; SAFETY EQUIPMENT &nbsp;•&nbsp; PORT OPERATIONS &nbsp;•&nbsp; MARINE LOGISTICS
-            </div>
-          </div>
+         <div className="marquee-track">
+           {Array.from({ length: 8 }).map((_, i) => (
+             <span key={i} style={marqueeContent}>
+              GENERAL SHIP SUPPLY &nbsp;•&nbsp; PROVISIONS &nbsp;•&nbsp; BONDED STORES &nbsp;•&nbsp; SAFETY EQUIPMENT &nbsp;•&nbsp; PORT OPERATIONS &nbsp;•&nbsp; MARINE LOGISTICS &nbsp;•&nbsp;
+             </span>
+            ))}
+         </div>
         </div>
 
 
@@ -225,8 +223,6 @@ const marqueeSection = {
   background: "#0b2a6f",
   overflow: "hidden",
   padding: "28px 0",
-  width: "100vw", // ⭐ ocupa largura total
-  marginLeft: "calc(50% - 50vw)", // ⭐ remove padding do container
 };
 
 const marqueeTrack: React.CSSProperties = {
@@ -243,8 +239,6 @@ const marqueeContent: React.CSSProperties = {
   letterSpacing: 6,
   fontWeight: 600,
   color: "#ffffff",
-  paddingRight: 0,
-  marginRight: 0,
 };
 
 
