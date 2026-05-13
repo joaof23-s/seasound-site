@@ -71,7 +71,7 @@ export default function Home() {
         <div style={text}>
           <h2>Marine Supply with Precision</h2>
           <p>
-            Seasound Ship Supply provides essential supplies for cargo vessels,
+            Sea Sound Ship Supply provides essential supplies for cargo vessels,
             ensuring each delivery meets operational requirements and
             international maritime standards.
           </p>
@@ -100,7 +100,7 @@ export default function Home() {
         <div style={text}>
           <h2>Strategic Port Coverage</h2>
           <p>
-            With local expertise, Seasound Ship Supply operates at the main
+            With local expertise, Sea Sound Ship Supply operates at the main
             ports of Rio de Janeiro state, offering fast and efficient marine
             logistics.
           </p>
