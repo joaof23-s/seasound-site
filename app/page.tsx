@@ -244,7 +244,8 @@ const marqueeContent: React.CSSProperties = {
   fontSize: 16,
   letterSpacing: 6,
   fontWeight: 600,
-  color: "#ffffff"
+  color: "#ffffff",
+  paddingRight: "4rem",
 };
 
 
