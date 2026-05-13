@@ -35,7 +35,7 @@ export default function Contact() {
           <h1 style={introTitle}>Let’s Discuss Your Vessel Requirements</h1>
           <p style={introText}>
             For quotations, operational coordination or marine supply inquiries,
-            contact Seasound Ship Supply through the channels below.
+            contact Sea Sound Ship Supply through the channels below.
           </p>
         </div>
       </section>
