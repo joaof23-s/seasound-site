@@ -6,7 +6,7 @@ export default function Services() {
       {/* INTRO */}
       <section style={intro}>
         <div style={introInner}>
-          <span style={tag}>Seasound Ship Supply</span>
+          <span style={tag}>Sea Sound Ship Supply</span>
           <h1 style={introTitle}>Marine Supply Categories</h1>
           <p style={introText}>
             Structured marine supply solutions developed to support cargo
@@ -61,7 +61,7 @@ export default function Services() {
       <section style={closing}>
         <h2>Designed for serious marine operations</h2>
         <p>
-          Seasound Ship Supply supports vessels calling Brazilian ports with
+          Sea Sound Ship Supply supports vessels calling Brazilian ports with
           structured supply solutions aligned with international maritime
           standards.
         </p>
