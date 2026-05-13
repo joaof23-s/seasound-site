@@ -6,10 +6,10 @@ export default function About() {
       {/* INTRO */}
       <section style={intro}>
         <div style={introInner}>
-          <span style={tag}>About Seasound</span>
+          <span style={tag}>About Sea Sound</span>
           <h1 style={introTitle}>A Marine Supply Company Built on Reliability</h1>
           <p style={introText}>
-            Seasound Ship Supply supports cargo vessels with structured marine
+            Sea Sound Ship Supply supports cargo vessels with structured marine
             supply solutions, developed to meet operational, regulatory and
             logistical demands.
           </p>
@@ -22,7 +22,7 @@ export default function About() {
           <h2>Experience is not measured in years.</h2>
           <p>
             It is measured in the ability to deliver accurately, under pressure
-            and within strict port schedules. Seasound Ship Supply operates with
+            and within strict port schedules. Sea Sound Ship Supply operates with
             a clear understanding of maritime risk and operational constraints.
           </p>
         </div>
