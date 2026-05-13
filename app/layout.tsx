@@ -2,9 +2,9 @@ import "./globals.css";
 import CopyEmail from "./components/CopyEmail";
 
 export const metadata = {
-  title: "Seasound Ship Supply | Marine Supply for Cargo Vessels",
+  title: "Sea Sound Ship Supply | Marine Supply for Cargo Vessels",
   description:
-    "Seasound Ship Supply provides marine supply and provisions for cargo vessels at Rio de Janeiro ports.",
+    "Sea Sound Ship Supply provides marine supply and provisions for cargo vessels at Rio de Janeiro ports.",
   icons: {
     icon: "/favicon.ico",
   },
@@ -58,7 +58,7 @@ export default function RootLayout({
               style={logoImage}
             />
             <span className="brand-text" style={brandText}>
-              SEASOUND SHIP SUPPLY
+              SEA SOUND SHIP SUPPLY
             </span>
           </a>
 
@@ -75,7 +75,7 @@ export default function RootLayout({
         {/* FOOTER */}
         <footer style={footer}>
           <div style={footerBottom}>
-            © {new Date().getFullYear()} Seasound Ship Supply · All rights reserved
+            © {new Date().getFullYear()} Sea Sound Ship Supply · All rights reserved
           </div>
         </footer>
       </body>
