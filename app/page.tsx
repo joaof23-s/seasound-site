@@ -243,6 +243,8 @@ const marqueeContent: React.CSSProperties = {
   letterSpacing: 6,
   fontWeight: 600,
   color: "#ffffff",
+  display: "flex",
+  alignItems: "center",
 };
 
 
